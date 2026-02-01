@@ -1,17 +1,21 @@
-name: Supabase Keep Alive
+name: Supabase Keep Alive Multi-Project
 on:
   schedule:
-    # Se ejecuta todos los días a las 00:00 UTC
     - cron: '0 0 * * *'
-  workflow_dispatch: # Permite ejecutarlo manualmente para probar
+  workflow_dispatch:
 
 jobs:
   clean_up:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete old records from p_activo
+      - name: Proyecto 1 - Personal Links
         run: |
           curl -X DELETE "https://nhqwwqfhazpzlksiftmd.supabase.co/rest/v1/p_activo?id=gt.0" \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE }}" \
-          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE }}" \
-          -H "Content-Type: application/json"
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE }}"
+
+      - name: Proyecto 2 - Axel Movies
+        run: |
+          curl -X DELETE "https://fzslqxsclswkedlohgtr.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_PROYECTO_AXELMOVIES }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_PROYECTO_AXELMOVIES }}"
