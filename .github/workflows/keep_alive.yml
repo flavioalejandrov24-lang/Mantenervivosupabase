@@ -19,3 +19,15 @@ jobs:
           curl -X DELETE "https://fzslqxsclswkedlohgtr.supabase.co/rest/v1/p_activo?id=gt.0" \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_PROYECTO_AXELMOVIES }}" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_PROYECTO_AXELMOVIES }}"
+
+      - name: Proyecto 3 - Photocloud
+        run: |
+          curl -X DELETE "https://fmomggmovxysofxtykq.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_PHOTOCLOUD }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_PHOTOCLOUD }}"
+
+      - name: Proyecto 4 - Piperavatars
+        run: |
+          curl -X DELETE "https://bmnmfpxorpkksczdewnp.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_PIPERAVATARS }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_PIPERAVATARS }}"
