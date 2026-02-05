@@ -31,3 +31,9 @@ jobs:
           curl -X DELETE "https://bmnmfpxorpkksczdewnp.supabase.co/rest/v1/p_activo?id=gt.0" \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_PIPERAVATARS }}" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_PIPERAVATARS }}"
+
+      - name: Proyecto 5 - Ubicanegoleon
+        run: |
+          curl -X DELETE "https://igastcafgjwijvgvcclr.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_UBICANEGOLEON }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_UBICANEGOLEON }}"
