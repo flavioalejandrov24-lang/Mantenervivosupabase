@@ -43,3 +43,9 @@ jobs:
           curl -X DELETE "https://mecrloufrzbfcihioeve.supabase.co/rest/v1/p_activo?id=gt.0" \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_EMPLEOSLEONGTO }}" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_EMPLEOSLEONGTO }}"
+
+      - name: Proyecto 7 - Lionmatch
+        run: |
+          curl -X DELETE "https://fjevgfyqqsfankvledpl.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_LIONMATCH }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_LIONMATCH }}"
