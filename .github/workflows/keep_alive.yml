@@ -49,3 +49,9 @@ jobs:
           curl -X DELETE "https://fjevgfyqqsfankvledpl.supabase.co/rest/v1/p_activo?id=gt.0" \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_LIONMATCH }}" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_LIONMATCH }}"
+
+      - name: Proyecto 8 - Supercreadorwebpro
+        run: |
+          curl -X DELETE "https://xmxdfrjoqzjgirigtrlu.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_CREADORPAGINASWEBPROAXEL }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_CREADORPAGINASWEBPROAXEL }}"
