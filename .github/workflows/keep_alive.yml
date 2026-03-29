@@ -55,3 +55,12 @@ jobs:
           curl -X DELETE "https://xmxdfrjoqzjgirigtrlu.supabase.co/rest/v1/p_activo?id=gt.0" \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_CREADORPAGINASWEBPROAXEL }}" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_CREADORPAGINASWEBPROAXEL }}"
+
+      - name: Proyecto 9 - Perfilesscortsleon
+        run: |
+          curl -X DELETE "https://zvtfwavhfeqrnfzwrain.supabase.co/rest/v1/p_activo?id=gt.0" \
+          -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_PERFILESSCORTSLEON }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_PERFILESSCORTSLEON }}"
+
+          
+
